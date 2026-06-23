@@ -9,3 +9,7 @@ This repository contains resources and documentation for the Jeram Batu fruit fa
 ## Getting Started
 
 More details coming soon.
+
+## Contributing
+
+Feel free to open issues or pull requests to improve this project.
