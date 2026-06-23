@@ -18,9 +18,12 @@
     <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </nav>
 
-  <section class="page-hero">
-    <h1>Contact Us</h1>
-    <p>We'd love to hear from you — orders, visits, or just a chat about fruit.</p>
+  <section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600&auto=format&fit=crop');">
+    <div class="hero-overlay"></div>
+    <div style="position:relative;">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you — orders, visits, or just a chat about fruit.</p>
+    </div>
   </section>
 
   <section class="section">
@@ -30,11 +33,12 @@
       <div class="contact-info">
         <h2>Get in Touch</h2>
 
-        <div class="contact-item">
-          <div class="ci-icon">👨‍🌾</div>
+        <!-- Person card with photo -->
+        <div class="contact-person-card">
+          <img src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=300&auto=format&fit=crop" alt="Ahmad bin Razali" class="contact-person-photo" />
           <div>
-            <h4>Ahmad bin Razali</h4>
-            <p>Founder & Head Farmer</p>
+            <h3>Ahmad bin Razali</h3>
+            <p style="color:var(--orange);font-weight:600;">Founder & Head Farmer</p>
           </div>
         </div>
 
@@ -70,11 +74,13 @@
           </div>
         </div>
 
-        <!-- WhatsApp CTA -->
         <a href="https://wa.me/60123456789?text=Hello%2C%20I%20am%20interested%20in%20your%20fruits!"
-           class="btn-primary" style="margin-top:1rem;display:inline-block;">
+           class="btn-primary" style="margin-top:1.5rem;display:inline-block;">
           💬 Chat on WhatsApp
         </a>
+
+        <!-- Farm photo -->
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=700&auto=format&fit=crop" alt="Our farm" style="width:100%;border-radius:12px;margin-top:2rem;object-fit:cover;height:220px;" />
       </div>
 
       <!-- Contact Form -->
@@ -117,20 +123,23 @@
     </div>
   </section>
 
-  <!-- Map placeholder -->
+  <!-- Map section with farm photo -->
   <section style="background:var(--green-light);padding:3rem 2rem;text-align:center;">
     <h2 style="color:var(--green-dark);margin-bottom:0.5rem;">Find Us</h2>
     <p style="color:var(--muted);margin-bottom:1.5rem;">Jeram Batu, Kuala Selangor — about 45 minutes from Kuala Lumpur.</p>
-    <div style="background:white;border-radius:12px;padding:3rem;max-width:700px;margin:0 auto;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
-      <div style="font-size:3rem;margin-bottom:0.75rem;">📍</div>
-      <p style="color:var(--muted);font-size:0.95rem;">
-        Lot 12, Jalan Ladang Buah, Jeram Batu,<br>
-        45800 Kuala Selangor, Selangor, Malaysia
-      </p>
-      <a href="https://maps.google.com/?q=Jeram+Batu+Kuala+Selangor" target="_blank"
-         class="btn-primary" style="display:inline-block;margin-top:1.25rem;">
-        Open in Google Maps
-      </a>
+    <div style="max-width:700px;margin:0 auto;">
+      <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=1400&auto=format&fit=crop" alt="Farm surroundings" style="width:100%;height:280px;object-fit:cover;border-radius:12px;margin-bottom:1.5rem;" />
+      <div style="background:white;border-radius:12px;padding:2rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+        <div style="font-size:2.5rem;margin-bottom:0.5rem;">📍</div>
+        <p style="color:var(--muted);font-size:0.95rem;">
+          Lot 12, Jalan Ladang Buah, Jeram Batu,<br>
+          45800 Kuala Selangor, Selangor, Malaysia
+        </p>
+        <a href="https://maps.google.com/?q=Jeram+Batu+Kuala+Selangor" target="_blank"
+           class="btn-primary" style="display:inline-block;margin-top:1.25rem;">
+          Open in Google Maps
+        </a>
+      </div>
     </div>
   </section>
 
@@ -143,7 +152,6 @@
     function toggleMenu() {
       document.querySelector('.nav-links').classList.toggle('open');
     }
-
     function handleSubmit(e) {
       e.preventDefault();
       const btn = document.querySelector('.form-submit');
