@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – Fruit Farm Jeram Batu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">🌿 Fruit Farm Jeram Batu</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+      <li><a href="fruits.html">Our Fruits</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <section class="page-hero">
+    <h1>About Us</h1>
+    <p>A family legacy rooted in the fertile land of Jeram Batu.</p>
+  </section>
+
+  <!-- Story -->
+  <section class="section">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Our Story</h2>
+        <p>Fruit Farm Jeram Batu was founded over two decades ago by a family deeply passionate about the land. What started as a small plot of guava and banana trees has grown into one of the region's most beloved tropical fruit farms.</p>
+        <p>Located in the lush lowlands of Jeram Batu, Selangor, our farm benefits from rich alluvial soil and a warm, humid climate — perfect conditions for growing an abundance of sweet, juicy tropical fruits.</p>
+        <p>We believe that the best fruits come from healthy soil, clean water, and the kind of patient care that only a family business can provide. Three generations later, that belief drives everything we do.</p>
+      </div>
+      <div class="about-visual">
+        🌿🍃<br>🌳<br>🍈🥭🍌
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="section bg-light">
+    <h2 class="section-title">Our Mission & Values</h2>
+    <div class="values-grid">
+      <div class="value-item">
+        <div class="icon">🌱</div>
+        <h3>Sustainability</h3>
+        <p>We farm with the future in mind — protecting the soil, water, and biodiversity of Jeram Batu for the next generation.</p>
+      </div>
+      <div class="value-item">
+        <div class="icon">💚</div>
+        <h3>Quality First</h3>
+        <p>Every fruit is hand-inspected before it leaves the farm. We don't compromise on freshness or taste.</p>
+      </div>
+      <div class="value-item">
+        <div class="icon">👨‍👩‍👧‍👦</div>
+        <h3>Community</h3>
+        <p>We employ local workers, support surrounding communities, and share our harvest at fair prices.</p>
+      </div>
+      <div class="value-item">
+        <div class="icon">🤝</div>
+        <h3>Transparency</h3>
+        <p>Farm tours are always welcome. We have nothing to hide — come see how we grow your food.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section">
+    <h2 class="section-title">Meet the Family</h2>
+    <div class="cards" style="max-width:800px;">
+      <div class="card">
+        <div class="card-icon">👨‍🌾</div>
+        <h3>Ahmad bin Razali</h3>
+        <p style="color:#f59e0b;font-weight:600;margin-bottom:0.5rem;">Founder & Head Farmer</p>
+        <p>With 30 years on the land, Ahmad knows every tree on the farm by name. His passion for quality fruit is the soul of the business.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">👩‍💼</div>
+        <h3>Siti Nurhaliza</h3>
+        <p style="color:#f59e0b;font-weight:600;margin-bottom:0.5rem;">Operations Manager</p>
+        <p>Ahmad's daughter, Siti handles the day-to-day operations and customer relationships, ensuring every order leaves the farm perfectly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta-content">
+      <h2>Want to Visit the Farm?</h2>
+      <p>We welcome farm visits for families, schools, and corporate groups. Get in touch to book your visit.</p>
+      <a href="contact.html" class="btn-primary">Contact Us</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>🌿 Fruit Farm Jeram Batu &nbsp;|&nbsp; Jeram Batu, Selangor, Malaysia</p>
+    <p style="margin-top:0.4rem;font-size:0.85rem;opacity:0.7;">© 2024 All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Fruits – Fruit Farm Jeram Batu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">🌿 Fruit Farm Jeram Batu</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="fruits.html" class="active">Our Fruits</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <section class="page-hero">
+    <h1>Our Fruits</h1>
+    <p>Grown with care, harvested at peak ripeness — taste the difference.</p>
+  </section>
+
+  <div class="fruits-section">
+    <h2 class="section-title">What We Grow</h2>
+    <div class="fruits-full-grid">
+
+      <div class="fruit-full-card">
+        <div class="fruit-banner">🍈</div>
+        <div class="fruit-info">
+          <h3>Guava (Jambu Batu)</h3>
+          <span class="season">Year-round</span>
+          <p>Our signature crop. Crisp, fragrant, and loaded with Vitamin C. Available in both white and pink flesh varieties. Great eaten fresh, juiced, or made into jam.</p>
+        </div>
+      </div>
+
+      <div class="fruit-full-card">
+        <div class="fruit-banner">🥭</div>
+        <div class="fruit-info">
+          <h3>Mango (Mangga)</h3>
+          <span class="season">May – August</span>
+          <p>Golden, fibre-rich mangoes with a sweet, tropical aroma. We grow several local varieties including Harumanis and Chok Anan — perfect for eating fresh or blending into smoothies.</p>
+        </div>
+      </div>
+
+      <div class="fruit-full-card">
+        <div class="fruit-banner">🍌</div>
+        <div class="fruit-info">
+          <h3>Banana (Pisang)</h3>
+          <span class="season">Year-round</span>
+          <p>Harvested daily from our mature banana groves. We grow Pisang Berangan, Pisang Raja, and Pisang Emas — each with its own unique sweetness and texture.</p>
+        </div>
+      </div>
+
+      <div class="fruit-full-card">
+        <div class="fruit-banner">🍍</div>
+        <div class="fruit-info">
+          <h3>Pineapple (Nanas)</h3>
+          <span class="season">March – October</span>
+          <p>Tangy and refreshing with a bright yellow flesh. Our pineapples are grown in well-drained sandy loam and picked only when fully ripe for maximum sweetness.</p>
+        </div>
+      </div>
+
+      <div class="fruit-full-card">
+        <div class="fruit-banner">🍉</div>
+        <div class="fruit-info">
+          <h3>Watermelon (Tembikai)</h3>
+          <span class="season">April – September</span>
+          <p>Juicy, cool, and naturally sweet. Our watermelons are grown under open sky and are a favourite for family gatherings and festive occasions.</p>
+        </div>
+      </div>
+
+      <div class="fruit-full-card">
+        <div class="fruit-banner">🌴</div>
+        <div class="fruit-info">
+          <h3>Papaya (Betik)</h3>
+          <span class="season">Year-round</span>
+          <p>Smooth, buttery, and rich in digestive enzymes. Our papayas are picked fresh every morning and are ideal for breakfast or tropical fruit salads.</p>
+        </div>
+      </div>
+
+      <div class="fruit-full-card">
+        <div class="fruit-banner">🍋</div>
+        <div class="fruit-info">
+          <h3>Calamansi (Limau Kasturi)</h3>
+          <span class="season">Year-round</span>
+          <p>Small but mighty. These zesty citrus gems are a staple in Malaysian cuisine — squeezed over rice dishes, stirred into drinks, or used in marinades.</p>
+        </div>
+      </div>
+
+      <div class="fruit-full-card">
+        <div class="fruit-banner">🟤</div>
+        <div class="fruit-info">
+          <h3>Starfruit (Belimbing)</h3>
+          <span class="season">June – December</span>
+          <p>Unique five-pointed cross-section and a refreshing sweet-sour taste. Eaten fresh, made into juice, or preserved as a condiment alongside local dishes.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bulk Order note -->
+  <section class="section bg-light" style="padding: 3rem 2rem;">
+    <div style="max-width:650px;margin:0 auto;text-align:center;">
+      <div style="font-size:2.5rem;margin-bottom:1rem;">📦</div>
+      <h2 style="color:var(--green-dark);margin-bottom:0.75rem;">Wholesale & Bulk Orders</h2>
+      <p style="color:var(--muted);margin-bottom:1.5rem;">We supply to markets, restaurants, hotels, and event organisers across Selangor and Kuala Lumpur. Contact us for pricing and minimum order quantities.</p>
+      <a href="contact.html" class="btn-primary">Enquire Now</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>🌿 Fruit Farm Jeram Batu &nbsp;|&nbsp; Jeram Batu, Selangor, Malaysia</p>
+    <p style="margin-top:0.4rem;font-size:0.85rem;opacity:0.7;">© 2024 All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
