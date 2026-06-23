@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fruit Farm Jeram Batu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">🌿 Fruit Farm Jeram Batu</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="fruits.html">Our Fruits</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Fresh From the Farm,<br>Straight to You</h1>
+      <p>Nestled in the lush greenery of Jeram Batu, we grow the finest tropical fruits with love and care.</p>
+      <a href="fruits.html" class="btn-primary">Explore Our Fruits</a>
+      <a href="contact.html" class="btn-secondary">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="section why-us">
+    <h2 class="section-title">Why Choose Us?</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🌱</div>
+        <h3>Naturally Grown</h3>
+        <p>We use sustainable farming practices, minimal pesticides, and natural fertilisers to grow healthy, flavourful fruits.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🍃</div>
+        <h3>Farm Fresh</h3>
+        <p>Harvested at peak ripeness and delivered fresh — no cold storage, no compromise on taste.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤝</div>
+        <h3>Family Business</h3>
+        <p>A family-run farm with generations of knowledge. Every fruit is handled with personal care and pride.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Fruits -->
+  <section class="section featured bg-light">
+    <h2 class="section-title">Our Star Fruits</h2>
+    <div class="fruit-grid">
+      <div class="fruit-card">
+        <div class="fruit-emoji">🍈</div>
+        <h3>Guava</h3>
+        <p>Sweet, fragrant, and packed with Vitamin C.</p>
+      </div>
+      <div class="fruit-card">
+        <div class="fruit-emoji">🍌</div>
+        <h3>Banana</h3>
+        <p>Creamy and naturally sweet, harvested daily.</p>
+      </div>
+      <div class="fruit-card">
+        <div class="fruit-emoji">🥭</div>
+        <h3>Mango</h3>
+        <p>Juicy, golden mangoes bursting with tropical flavour.</p>
+      </div>
+      <div class="fruit-card">
+        <div class="fruit-emoji">🍍</div>
+        <h3>Pineapple</h3>
+        <p>Tangy and refreshing, perfect for any occasion.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2rem;">
+      <a href="fruits.html" class="btn-primary">See All Fruits</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-content">
+      <h2>Ready to Order Fresh Fruits?</h2>
+      <p>Reach out to us today for bulk orders, farm visits, or any enquiries.</p>
+      <a href="contact.html" class="btn-primary">Contact Us Now</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>🌿 Fruit Farm Jeram Batu &nbsp;|&nbsp; Jeram Batu, Selangor, Malaysia</p>
+    <p style="margin-top:0.4rem;font-size:0.85rem;opacity:0.7;">© 2024 All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

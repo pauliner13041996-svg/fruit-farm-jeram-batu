@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Fruit Farm Jeram Batu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">🌿 Fruit Farm Jeram Batu</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="fruits.html">Our Fruits</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <section class="page-hero">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you — orders, visits, or just a chat about fruit.</p>
+  </section>
+
+  <section class="section">
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+
+        <div class="contact-item">
+          <div class="ci-icon">👨‍🌾</div>
+          <div>
+            <h4>Ahmad bin Razali</h4>
+            <p>Founder & Head Farmer</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ci-icon">📞</div>
+          <div>
+            <h4>Phone / WhatsApp</h4>
+            <p>+60 12-345 6789</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ci-icon">📧</div>
+          <div>
+            <h4>Email</h4>
+            <p>hello@fruitfarmjerambatu.my</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ci-icon">📍</div>
+          <div>
+            <h4>Farm Address</h4>
+            <p>Lot 12, Jalan Ladang Buah,<br>Jeram Batu, 45800 Kuala Selangor,<br>Selangor, Malaysia</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ci-icon">🕗</div>
+          <div>
+            <h4>Operating Hours</h4>
+            <p>Monday – Saturday: 7:00am – 5:00pm<br>Sunday: 7:00am – 12:00pm</p>
+          </div>
+        </div>
+
+        <!-- WhatsApp CTA -->
+        <a href="https://wa.me/60123456789?text=Hello%2C%20I%20am%20interested%20in%20your%20fruits!"
+           class="btn-primary" style="margin-top:1rem;display:inline-block;">
+          💬 Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="e.g. Ali bin Hassan" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="e.g. 012-345 6789" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">I'm interested in…</label>
+            <select id="subject">
+              <option value="">Select a topic</option>
+              <option>Buying fruits (retail)</option>
+              <option>Wholesale / bulk order</option>
+              <option>Farm visit / tour</option>
+              <option>General enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us what you need…" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit">Send Message</button>
+          <div class="success-msg" id="successMsg">
+            ✅ Thank you! We'll get back to you within 1 business day.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Map placeholder -->
+  <section style="background:var(--green-light);padding:3rem 2rem;text-align:center;">
+    <h2 style="color:var(--green-dark);margin-bottom:0.5rem;">Find Us</h2>
+    <p style="color:var(--muted);margin-bottom:1.5rem;">Jeram Batu, Kuala Selangor — about 45 minutes from Kuala Lumpur.</p>
+    <div style="background:white;border-radius:12px;padding:3rem;max-width:700px;margin:0 auto;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+      <div style="font-size:3rem;margin-bottom:0.75rem;">📍</div>
+      <p style="color:var(--muted);font-size:0.95rem;">
+        Lot 12, Jalan Ladang Buah, Jeram Batu,<br>
+        45800 Kuala Selangor, Selangor, Malaysia
+      </p>
+      <a href="https://maps.google.com/?q=Jeram+Batu+Kuala+Selangor" target="_blank"
+         class="btn-primary" style="display:inline-block;margin-top:1.25rem;">
+        Open in Google Maps
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>🌿 Fruit Farm Jeram Batu &nbsp;|&nbsp; Jeram Batu, Selangor, Malaysia</p>
+    <p style="margin-top:0.4rem;font-size:0.85rem;opacity:0.7;">© 2024 All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = document.querySelector('.form-submit');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('successMsg').style.display = 'block';
+        document.getElementById('contactForm').reset();
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
