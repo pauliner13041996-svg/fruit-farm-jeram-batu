@@ -19,6 +19,24 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text); line-
 a { text-decoration: none; color: inherit; }
 img { max-width: 100%; display: block; }
 
+/* ── Photo Enhancement — makes all farm photos look vivid and professional ── */
+.hero { filter: saturate(1.15); }
+.card-img       { filter: contrast(1.08) saturate(1.25) brightness(1.04); transition: filter 0.3s; }
+.card-img:hover { filter: contrast(1.12) saturate(1.35) brightness(1.08); }
+.gallery-strip img       { filter: contrast(1.1) saturate(1.2) brightness(1.03); transition: filter 0.3s, opacity 0.2s; }
+.gallery-strip img:hover { filter: contrast(1.15) saturate(1.4) brightness(1.07); opacity: 1; }
+.fruit-card-img       { filter: contrast(1.1) saturate(1.3) brightness(1.05); transition: filter 0.3s; }
+.fruit-card-img:hover { filter: contrast(1.15) saturate(1.45) brightness(1.08); }
+.photo-banner img { filter: contrast(1.1) saturate(1.2) brightness(0.95); }
+.farm-photo-grid img       { filter: contrast(1.1) saturate(1.25) brightness(1.04); transition: filter 0.3s, transform 0.3s; }
+.farm-photo-grid img:hover { filter: contrast(1.15) saturate(1.4) brightness(1.07); transform: scale(1.02); }
+.value-img       { filter: contrast(1.08) saturate(1.2) brightness(1.03); }
+.fruit-photo     { filter: contrast(1.1) saturate(1.3) brightness(1.04); transition: filter 0.3s; }
+.fruit-photo:hover { filter: contrast(1.15) saturate(1.45) brightness(1.07); }
+.team-photo      { filter: contrast(1.05) saturate(1.1) brightness(1.02); }
+.contact-person-photo { filter: contrast(1.05) saturate(1.1) brightness(1.02); }
+.page-hero       { filter: saturate(1.1); }
+
 /* ── Navbar ── */
 .navbar {
   position: sticky; top: 0; z-index: 100;
