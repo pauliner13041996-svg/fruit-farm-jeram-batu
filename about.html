@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us – Fruit Farm Jeram Batu</title>
+  <title>About Us — Fruit Farm Jeram Batu</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -18,32 +18,54 @@
     <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </nav>
 
-  <!-- Page hero with photo -->
   <section class="page-hero" style="background-image:url('photo-coconut-road.jpg');">
     <div class="hero-overlay"></div>
-    <div style="position:relative;">
-      <h1>About Us</h1>
-      <p>A family legacy rooted in the fertile land of Jeram Batu.</p>
-    </div>
+    <div class="hero-badge" style="position:relative;">Our Story</div>
+    <h1>Rooted in the Land of Jeram Batu</h1>
+    <p>A family legacy grown from a handful of coconut palms into one of Johor's most loved tropical farms.</p>
   </section>
 
   <!-- Story -->
-  <section class="section">
+  <section class="section bg-white">
     <div class="about-grid">
       <div class="about-text">
-        <h2>Our Story</h2>
+        <div class="section-label" style="text-align:left;">Who We Are</div>
+        <h2>Two Decades of Growing the Finest Tropical Fruits</h2>
         <p>Fruit Farm Jeram Batu was founded over two decades ago by a family deeply passionate about the land. What started as a small coconut plantation has grown into one of Johor's most beloved tropical fruit farms, with coconut remaining our pride and main crop.</p>
         <p>Located in the fertile lowlands of Jeram Batu, Pekan Nenas, Johor, our farm benefits from rich alluvial soil, abundant rainfall, and a warm tropical climate — perfect conditions for our thriving coconut palms and a wide variety of other tropical fruits.</p>
         <p>We believe that the best produce comes from healthy soil, clean water, and patient care that only a family business can provide. Every coconut and every fruit that leaves our farm carries that commitment.</p>
+        <a href="fruits.html" class="btn-primary" style="margin-top:1rem;display:inline-block;">See What We Grow</a>
       </div>
-      <div class="about-visual">
-        <img src="photo-hut.jpg" alt="Our farm" style="width:100%;height:340px;object-fit:cover;border-radius:12px;" />
+      <div style="overflow:hidden;border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,0.12);">
+        <img src="photo-hut.jpg" alt="Our farm" style="width:100%;height:420px;object-fit:cover;filter:contrast(1.08) saturate(1.2) brightness(1.03);" />
       </div>
     </div>
   </section>
 
-  <!-- Farm photo grid -->
-  <section class="section bg-light" style="padding-top:0;">
+  <!-- Stats -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-num">20+</div>
+      <div class="stat-label">Acres of Farmland</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">9+</div>
+      <div class="stat-label">Fruit Varieties</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">20+</div>
+      <div class="stat-label">Years of Experience</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Family Run</div>
+    </div>
+  </div>
+
+  <!-- Farm Photo Grid -->
+  <section class="section bg-cream" style="padding-bottom:1rem;">
+    <div class="section-label">Life on the Farm</div>
+    <h2 class="section-title">A Glimpse of Jeram Batu</h2>
     <div class="farm-photo-grid">
       <img src="photo-farm-night.jpg" alt="Farm at dusk" />
       <img src="photo-farm-oven.jpg" alt="Farm outdoor kitchen" />
@@ -52,18 +74,20 @@
     </div>
   </section>
 
-  <!-- Mission -->
-  <section class="section">
+  <!-- Values -->
+  <section class="section bg-cream">
+    <div class="section-label">What We Stand For</div>
     <h2 class="section-title">Our Mission & Values</h2>
+    <p class="section-sub">Every decision we make on the farm comes back to these four principles.</p>
     <div class="values-grid">
       <div class="value-item">
-        <img src="photo-coconut-road.jpg" alt="Sustainable farming" class="value-img" />
+        <img src="photo-coconut-road.jpg" alt="Sustainability" class="value-img" />
         <div class="icon">🌱</div>
         <h3>Sustainability</h3>
         <p>We farm with the future in mind — protecting the soil, water, and biodiversity of our land in Johor for the next generation.</p>
       </div>
       <div class="value-item">
-        <img src="photo-jackfruit.jpg" alt="Quality fruits" class="value-img" />
+        <img src="photo-jackfruit.jpg" alt="Quality" class="value-img" />
         <div class="icon">💚</div>
         <h3>Quality First</h3>
         <p>Every fruit is hand-inspected before it leaves the farm. We don't compromise on freshness or taste.</p>
@@ -75,7 +99,7 @@
         <p>We employ local workers, support surrounding communities, and share our harvest at fair prices.</p>
       </div>
       <div class="value-item">
-        <img src="photo-hut.jpg" alt="Farm tours" class="value-img" />
+        <img src="photo-hut.jpg" alt="Transparency" class="value-img" />
         <div class="icon">🤝</div>
         <h3>Transparency</h3>
         <p>Farm tours are always welcome. We have nothing to hide — come see how we grow your food.</p>
@@ -84,8 +108,10 @@
   </section>
 
   <!-- Team -->
-  <section class="section bg-light">
-    <h2 class="section-title">Meet the Family</h2>
+  <section class="section bg-white">
+    <div class="section-label">The People Behind the Farm</div>
+    <h2 class="section-title">Meet the Team</h2>
+    <p class="section-sub">A small, dedicated family team who pour their hearts into every harvest.</p>
     <div class="team-grid">
       <div class="team-card">
         <img src="photo-coconut-road.jpg" alt="Li Wei" class="team-photo" />
@@ -96,33 +122,36 @@
         </div>
       </div>
       <div class="team-card">
-        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop" alt="Siti Nurhaliza" class="team-photo" />
+        <img src="photo-farm-night.jpg" alt="Our Team" class="team-photo" />
         <div class="team-info">
-          <h3>Siti Nurhaliza</h3>
-          <span class="team-role">Operations Manager</span>
-          <p>Ahmad's daughter, Siti handles day-to-day operations and customer relationships, ensuring every order leaves the farm perfectly.</p>
+          <h3>Our Farm Team</h3>
+          <span class="team-role">Jeram Batu, Johor</span>
+          <p>A dedicated group of local workers who tend to the farm daily — harvesting, planting, and keeping Fruit Farm Jeram Batu thriving season after season.</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="cta">
-    <div class="cta-content">
-      <h2>Want to Visit the Farm?</h2>
-      <p>We welcome farm visits for families, schools, and corporate groups. Get in touch to book your visit.</p>
-      <a href="contact.html" class="btn-primary">Contact Us</a>
-    </div>
+    <h2>Want to Visit the Farm?</h2>
+    <p>We welcome farm visits for families, schools, and corporate groups. Get in touch to book your visit.</p>
+    <a href="contact.html" class="btn-primary">Contact Us</a>
   </section>
 
   <footer class="footer">
-    <p>🌿 Fruit Farm Jeram Batu &nbsp;|&nbsp; Pekan Nenas, Johor, Malaysia</p>
-    <p style="margin-top:0.4rem;font-size:0.85rem;opacity:0.7;">© 2024 All rights reserved.</p>
+    <div class="footer-brand">🌿 Fruit Farm Jeram Batu</div>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="fruits.html">Our Fruits</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p style="color:rgba(255,255,255,0.55);font-size:0.85rem;">Lot 5173 TL JJB 6 Kg Jeram Batu, Pekan Nenas, Johor, Malaysia</p>
+    <p class="footer-copy">© 2024 Fruit Farm Jeram Batu. All rights reserved.</p>
   </footer>
 
   <script>
-    function toggleMenu() {
-      document.querySelector('.nav-links').classList.toggle('open');
-    }
+    function toggleMenu() { document.querySelector('.nav-links').classList.toggle('open'); }
   </script>
 </body>
 </html>
